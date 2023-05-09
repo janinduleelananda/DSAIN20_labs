@@ -145,7 +145,8 @@ struct HashTable{
         hash = hashfunc(user_name);
         empty = is_slot_empty(hash);
         
-        if (!empty) password[hash].search(user_name);
+        if (!empty) password[hash].search(user_name); 
+        else cout<<"user not found"<<endl;
 	
 	
 	
